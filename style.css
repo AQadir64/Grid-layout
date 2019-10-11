@@ -1,0 +1,119 @@
+.grid {
+  /* grid items are placed in row default */
+
+  /* and span the full width of grid size */
+
+  display: grid;
+  background: black;
+  color: white;
+
+  /* Defines the columns and rows of the grid with a space-separated list of values. */
+
+  grid-template-columns: [first] 40px [line2] 50px [line3] auto [col4-start] 50px [five] 40px [end];
+  grid-template-rows: [row1-start] 25% [row1-end] 100px [third-line] auto [last-line];
+}
+
+.inline-grid {
+  /* grid items are placed in row default */
+
+  /* and span the full width of child element*/
+
+  display: inline-grid;
+  background: sienna;
+  color: white;
+
+  /* repeat function for repeating values */
+
+  grid-template-columns: repeat(3, 33.33% [col-start]);
+}
+
+.grid-2 {
+  /* grid items are placed in row default */
+
+  /* and span the full width of grid size */
+
+  display: grid;
+  background: salmon;
+  color: white;
+
+  /* hides the overflow */
+
+  overflow: hidden;
+
+  /* Defines the columns and rows of the grid with a space-separated list of values. */
+
+  grid-template-columns: [first] 20vw [line2] 20vh [line3] auto [line4] 10vw [end];
+  grid-template-rows: [row1-start] 25% [row1-end] 100px [third-line] auto [last-line];
+}
+
+.item-1 {
+  /* tells from whhere element will start in column*/
+  grid-column-start: line2;
+}
+
+.item-2 {
+  grid-column-start: line4;
+  grid-row-start: row1-end;
+}
+
+.item-3 {
+  grid-column-start: line3;
+  grid-row-start: row1-end;
+}
+
+.fraction-grid {
+  display: grid;
+
+  /* ditribute the columns in fraction like 1fr 1fr 
+  1fr distribute the columns in 1/3 rd of the width available */
+
+  grid-template-columns: 1fr 1fr 1fr;
+  background-color: yellowgreen;
+}
+.template-area {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  background-color:white;
+
+  /* defines the name of an area */
+
+  grid-template-areas:
+    "header header header header"
+    "main main . sidebar"
+    "footer footer footer footer";
+}
+.item-a {
+    /* template area decleration */
+    
+  grid-area: header;
+  width: auto;
+  height: 85px;
+  background-color:rgb(33, 168, 209);
+}
+.template-area h1 {
+  text-align: center;
+}
+.item-b {
+    /* template area decleration */
+  grid-area: main;
+  width: auto;
+  height: 200px;
+  background-color: rgb(33, 180, 300);
+}
+.item-c {
+    /* template area decleration */
+    
+  grid-area: sidebar;
+  width: auto;
+  height: 200px;
+  background-color:lightseagreen;
+}
+.item-d{
+    /* template area decleration */
+
+  grid-area: footer;
+  width: auto;
+  height: 200px;
+  background-color:skyblue;
+}
