@@ -181,3 +181,99 @@
     /* start = from start  */
     align-items: start;
 }
+/* 
+ place item place both align item and justify item in single 
+ like place-item : <align-itme> / <justify-item> */
+
+
+ /* sometimes the total size of grid is less then the size of grid
+ so we have to do the .justify-content  space column wise*/
+ 
+ 
+.container{
+     width: 80vw;
+     height: 500px;
+ }
+ .grid-justify-content {
+     display: grid;
+     grid-template-columns: 20vw 20vw 20vw;
+     grid-template-rows: 100px 100px 100px;
+     background: greenyellow;
+}
+.justify-content {
+    width: 50px;
+    height: 50px;
+    background-color: indigo;
+}
+
+.grid-justify-content-s{
+    place-items: start start;
+    justify-content: start;
+}
+
+.grid-justify-content-e{
+    place-items: end end;
+    justify-content: end;
+}
+.grid-justify-content-c{
+    place-items: center center;
+    justify-content: center;
+}
+.grid-justify-content-sb{
+    place-items: center end;
+    justify-content: space-between;
+}
+.grid-justify-content-sa{
+    place-items: center start;
+    justify-content: space-around;
+}
+.grid-justify-content-se{
+    place-items: stretch center;
+    justify-content: space-evenly;;
+}
+
+/* sometimes the total size of grid is less then the size of grid
+ so we have to do the .align-content  space row wise*/
+
+.container2{
+    width: 75vw;
+    height: 400px;
+}
+.grid-align-content {
+    display: grid;
+    grid-template-columns: 25vw 25vw 25vw;
+    grid-template-rows: 100px 100px 100px;
+    background: khaki;
+}
+.align-content {
+   width: 50px;
+   height: 50px;
+   background-color: aquamarine;
+}
+
+.grid-align-content-s{
+   place-items: start start;
+   align-content: start;
+}
+
+.grid-align-content-e{
+   place-items: end end;
+   align-content: end;
+}
+.grid-align-content-c{
+   place-items: center center;
+   align-content: center;
+
+}
+.grid-align-content-sb{
+   place-items: center end;
+   align-content: space-between;
+}
+.grid-align-content-sa{
+   place-items: center start;
+   align-content: space-around;
+}
+.grid-align-content-se{
+   place-items: stretch center;
+   align-content: space-evenly;;
+}
