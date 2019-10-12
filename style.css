@@ -108,7 +108,7 @@
   grid-area: sidebar;
   width: auto;
   height: 200px;
-  background-color:hotpink;
+  background-color: hotpink;
 }
 .item-d {
   /* template area decleration */
@@ -116,7 +116,7 @@
   grid-area: footer;
   width: auto;
   height: 85px;
-  background-color:cornflowerblue;
+  background-color: cornflowerblue;
 }
 
 .grid-gutter {
@@ -128,152 +128,192 @@
     "header header header header"
     "main main . sidebar" "footer footer footer footer";
 
-/* define the gap between the columns and row normally called gutter */
+  /* define the gap between the columns and row normally called gutter */
 
-    column-gap: 15px;
-    row-gap: 10px;
+  column-gap: 15px;
+  row-gap: 10px;
 }
 .jus-items {
-    width: 100px;
-    height: 100px;
-    background-color: crimson;
+  width: 100px;
+  height: 100px;
+  background-color: crimson;
 }
-.grid-justify-items{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: auto;
-    column-gap: 10px;
-    row-gap: 10px;
+.grid-justify-items {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  column-gap: 10px;
+  row-gap: 10px;
 }
-.grid-justify-items-1{
-     /* center = at center  */
-     justify-items: center;
+.grid-justify-items-1 {
+  /* center = at center  */
+  justify-items: center;
 }
-.grid-justify-items-2{
-    /* end = at end  */
-    justify-items: end;
-}.grid-justify-items-3{
-    /* start = from start  */
-    justify-items: start;
+.grid-justify-items-2 {
+  /* end = at end  */
+  justify-items: end;
+}
+.grid-justify-items-3 {
+  /* start = from start  */
+  justify-items: start;
 }
 
 .align-items {
-    width: 100px;
-    height: 30px;
-    background-color: slateblue;
+  width: 100px;
+  height: 30px;
+  background-color: slateblue;
 }
-.grid-align-items{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 60px 60px 60px;
-    column-gap: 10px;
-    row-gap: 10px;
-    background-color: gray;
+.grid-align-items {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 60px 60px 60px;
+  column-gap: 10px;
+  row-gap: 10px;
+  background-color: gray;
 }
-.grid-align-items-1{
-     /* center = at center  */
-     align-items: center;
+.grid-align-items-1 {
+  /* center = at center  */
+  align-items: center;
 }
-.grid-align-items-2{
-    /* end = at end  */
-    align-items: end;
-}.grid-align-items-3{
-    /* start = from start  */
-    align-items: start;
+.grid-align-items-2 {
+  /* end = at end  */
+  align-items: end;
+}
+.grid-align-items-3 {
+  /* start = from start  */
+  align-items: start;
 }
 /* 
  place item place both align item and justify item in single 
  like place-item : <align-itme> / <justify-item> */
 
-
- /* sometimes the total size of grid is less then the size of grid
+/* sometimes the total size of grid is less then the size of grid
  so we have to do the .justify-content  space column wise*/
- 
- 
-.container{
-     width: 80vw;
-     height: 500px;
- }
- .grid-justify-content {
-     display: grid;
-     grid-template-columns: 20vw 20vw 20vw;
-     grid-template-rows: 100px 100px 100px;
-     background: greenyellow;
+
+.container {
+  width: 80vw;
+  height: 500px;
+}
+.grid-justify-content {
+  display: grid;
+  grid-template-columns: 20vw 20vw 20vw;
+  grid-template-rows: 100px 100px 100px;
+  background: greenyellow;
 }
 .justify-content {
-    width: 50px;
-    height: 50px;
-    background-color: indigo;
+  width: 50px;
+  height: 50px;
+  background-color: indigo;
 }
 
-.grid-justify-content-s{
-    place-items: start start;
-    justify-content: start;
+.grid-justify-content-s {
+  place-items: start start;
+  justify-content: start;
 }
 
-.grid-justify-content-e{
-    place-items: end end;
-    justify-content: end;
+.grid-justify-content-e {
+  place-items: end end;
+  justify-content: end;
 }
-.grid-justify-content-c{
-    place-items: center center;
-    justify-content: center;
+.grid-justify-content-c {
+  place-items: center center;
+  justify-content: center;
 }
-.grid-justify-content-sb{
-    place-items: center end;
-    justify-content: space-between;
+.grid-justify-content-sb {
+  place-items: center end;
+  justify-content: space-between;
 }
-.grid-justify-content-sa{
-    place-items: center start;
-    justify-content: space-around;
+.grid-justify-content-sa {
+  place-items: center start;
+  justify-content: space-around;
 }
-.grid-justify-content-se{
-    place-items: stretch center;
-    justify-content: space-evenly;;
+.grid-justify-content-se {
+  place-items: stretch center;
+  justify-content: space-evenly;
 }
 
 /* sometimes the total size of grid is less then the size of grid
  so we have to do the .align-content  space row wise*/
 
-.container2{
-    width: 75vw;
-    height: 400px;
+.container2 {
+  width: 75vw;
+  height: 400px;
 }
 .grid-align-content {
-    display: grid;
-    grid-template-columns: 25vw 25vw 25vw;
-    grid-template-rows: 100px 100px 100px;
-    background: khaki;
+  display: grid;
+  grid-template-columns: 25vw 25vw 25vw;
+  grid-template-rows: 100px 100px 100px;
+  background: khaki;
 }
 .align-content {
-   width: 50px;
-   height: 50px;
-   background-color: aquamarine;
+  width: 50px;
+  height: 50px;
+  background-color: aquamarine;
 }
 
-.grid-align-content-s{
-   place-items: start start;
-   align-content: start;
+.grid-align-content-s {
+  place-items: start start;
+  align-content: start;
 }
 
-.grid-align-content-e{
-   place-items: end end;
-   align-content: end;
+.grid-align-content-e {
+  place-items: end end;
+  align-content: end;
 }
-.grid-align-content-c{
-   place-items: center center;
-   align-content: center;
+.grid-align-content-c {
+  place-items: center center;
+  align-content: center;
+}
+.grid-align-content-sb {
+  place-items: center end;
+  align-content: space-between;
+}
+.grid-align-content-sa {
+  place-items: center start;
+  align-content: space-around;
+}
+.grid-align-content-se {
+  place-items: stretch center;
+  align-content: space-evenly;
+}
 
+/* place content used for both justify-conetnt and align-content at a time 
+ */
+
+ /* grid auto column generate */
+
+.container3 {
+  width: 100vw;
+  height: 50vh;
+  background-color: burlywood;
 }
-.grid-align-content-sb{
-   place-items: center end;
-   align-content: space-between;
+.grid3 {
+  display: grid;
+  grid: 50px 50px/ 50px 50px 50px 50px 50px;
+  grid-auto-columns: 10px;
+
+ /* grid overflow property  */
+
+  grid-auto-flow: column;
+  column-gap: 15px;
 }
-.grid-align-content-sa{
-   place-items: center start;
-   align-content: space-around;
+.item-x {
+  background-color: chartreuse;
+  width: 50px;
+  height: 50px;
+  /* grid-row: 2/3; */
+  grid-column: 1/2;
 }
-.grid-align-content-se{
-   place-items: stretch center;
-   align-content: space-evenly;;
+.item-y {
+    width: 50px;
+    height: 50px;
+    background-color: crimson;
+    /* grid-column: 2/3; */
+}
+.item-z{
+  background-color: cornflowerblue;
+  width: 50px;
+  height: 50px;
+  /* grid-row: 2/3; */
+  grid-column: 4/5;
 }
