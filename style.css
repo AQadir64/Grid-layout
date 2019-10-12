@@ -74,7 +74,7 @@
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: auto;
-  background-color:white;
+  background-color: white;
 
   /* defines the name of an area */
 
@@ -84,36 +84,100 @@
     "footer footer footer footer";
 }
 .item-a {
-    /* template area decleration */
-    
+  /* template area decleration */
+
   grid-area: header;
   width: auto;
   height: 85px;
-  background-color:rgb(33, 168, 209);
+  background-color: greenyellow;
 }
-.template-area h1 {
+.template-area,
+.grid-gurtter h1 {
   text-align: center;
 }
 .item-b {
-    /* template area decleration */
+  /* template area decleration */
   grid-area: main;
   width: auto;
   height: 200px;
-  background-color: rgb(33, 180, 300);
+  background-color: sandybrown;
 }
 .item-c {
-    /* template area decleration */
-    
+  /* template area decleration */
+
   grid-area: sidebar;
   width: auto;
   height: 200px;
-  background-color:lightseagreen;
+  background-color:hotpink;
 }
-.item-d{
-    /* template area decleration */
+.item-d {
+  /* template area decleration */
 
   grid-area: footer;
   width: auto;
-  height: 200px;
-  background-color:skyblue;
+  height: 85px;
+  background-color:cornflowerblue;
+}
+
+.grid-gutter {
+  display: grid;
+  grid-template-columns: 0.8fr 0.8fr 0.8fr 0.8fr;
+  grid-template-rows: auto;
+  background-color: black;
+  grid-template-areas:
+    "header header header header"
+    "main main . sidebar" "footer footer footer footer";
+
+/* define the gap between the columns and row normally called gutter */
+
+    column-gap: 15px;
+    row-gap: 10px;
+}
+.jus-items {
+    width: 100px;
+    height: 100px;
+    background-color: crimson;
+}
+.grid-justify-items{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    column-gap: 10px;
+    row-gap: 10px;
+}
+.grid-justify-items-1{
+     /* center = at center  */
+     justify-items: center;
+}
+.grid-justify-items-2{
+    /* end = at end  */
+    justify-items: end;
+}.grid-justify-items-3{
+    /* start = from start  */
+    justify-items: start;
+}
+
+.align-items {
+    width: 100px;
+    height: 30px;
+    background-color: slateblue;
+}
+.grid-align-items{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 60px 60px 60px;
+    column-gap: 10px;
+    row-gap: 10px;
+    background-color: gray;
+}
+.grid-align-items-1{
+     /* center = at center  */
+     align-items: center;
+}
+.grid-align-items-2{
+    /* end = at end  */
+    align-items: end;
+}.grid-align-items-3{
+    /* start = from start  */
+    align-items: start;
 }
