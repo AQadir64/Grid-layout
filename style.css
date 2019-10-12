@@ -317,3 +317,11 @@
   /* grid-row: 2/3; */
   grid-column: 4/5;
 }
+
+/* When sizing rows and columns, you can use all the lengths you are used to, like px, rem, %, etc, but you also have keywords like min-content,
+max-content, auto, and perhaps the most useful, fractional units. grid-template-columns: 200px 1fr 2fr min-content;
+
+You also have access to a function which can help set boundaries for otherwise flexible units. For example to set a column to be 1fr, but shrink no further than 200px: grid-template-columns: 1fr minmax(200px, 1fr);
+There is repeat() function, which saves some typing, like making 10 columns: grid-template-columns: repeat(10, 1fr);
+
+Combining all of these things can be extremely powerful, like grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); */
